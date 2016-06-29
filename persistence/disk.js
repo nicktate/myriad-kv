@@ -18,7 +18,7 @@ class Disk {
     bootstrap(fn) {
         fs.readFile(this.options.snapshot_path, (err, data) => {
             if(err && err.code == 'ENOENT') {
-                fs.writeFile(this.options.snapshot_path, '', (err, data) => {
+                fs.writeFile(this.options.snapshot_path, '', (err) => {
                     if(err) {
                         return fn(err);
                     }

@@ -4,8 +4,8 @@
 const dns = require('native-dns');
 
 const question = dns.Question({
-  name: `followers.${process.env.CS_CLUSTER_ID}.containership`,
-  type: 'A'
+    name: `followers.${process.env.CS_CLUSTER_ID}.containership`,
+    type: 'A'
 });
 
 const req = dns.Request({

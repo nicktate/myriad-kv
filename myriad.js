@@ -8,7 +8,7 @@ const options = {
     legiond: {
         network: {
             port: process.env.MYRIAD_PORT,
-            cidr: process.env.MYRIAD_CIDR ? process.env.MYRIAD_CIDR.split(",") : [],
+            cidr: process.env.MYRIAD_CIDR ? process.env.MYRIAD_CIDR.split(',') : [],
             public: process.env.MYRIAD_PUBLIC
         },
         attributes: {
@@ -21,7 +21,7 @@ const options = {
         snapshot_name: process.env.MYRIAD_SNAPSHOT_NAME
     },
     standalone: true
-}
+};
 
 const myriad = new Myriad(options);
 myriad.listen(() => {
