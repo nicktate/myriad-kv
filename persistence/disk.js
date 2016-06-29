@@ -6,8 +6,8 @@ const msgpack = require('msgpack-js');
 
 class Disk {
     constructor(options) {
-        this.options = options || {};
-        this.options = _.defaults(this.options, {
+        options = options || {};
+        this.options = _.defaults(options, {
             data_directory: '/data',
             snapshot_name: 'snapshot'
         });
