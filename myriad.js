@@ -1,7 +1,9 @@
 #!/usr/bin/env node
-var Myriad = require([__dirname, "application"].join("/"));
+'use strict';
 
-var options = {
+const Myriad = require('./application');
+
+const options = {
     leader_eligible: true,
     legiond: {
         network: {
@@ -21,5 +23,7 @@ var options = {
     standalone: true
 }
 
-var myriad = new Myriad(options);
-myriad.listen(function(){});
+const myriad = new Myriad(options);
+myriad.listen(() => {
+    /* myriad is listening */
+});
