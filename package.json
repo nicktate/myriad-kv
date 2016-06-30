@@ -5,6 +5,8 @@
   "main": "application.js",
   "dependencies": {
     "async": "^1.0.0",
+    "bluebird": "^3.4.1",
+    "co": "^4.6.0",
     "lodash": "^3.9.3",
     "mocha": "^2.4.5",
     "msgpack-js": "^0.3.0",
